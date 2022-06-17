@@ -38,3 +38,7 @@ def whitespace_remover(df):
             # if condition is False then it will do nothing.
             pass
 
+def check_content(df, column_name):
+    categories = list(df[column_name].value_counts().index)
+    for x in range(len(categories)):
+        print (categories[x])
